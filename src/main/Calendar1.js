@@ -2,6 +2,7 @@ import Calendar from "react-awesome-calendar";
 import React from "react";
 import { Link } from "react-router-dom";
 import "./calendar.css";
+import Nav from "./nav";
 import styled from "styled-components";
 const Button1 = styled.button`
   background: #3180e8;
@@ -46,13 +47,16 @@ const events = [
 class Calendar1 extends React.Component {
   render() {
     return (
-      <div className="calendar">
-        <div className="button">
-          <Link to="/form">
-            <Button1>Add New Event!!</Button1>{" "}
-          </Link>
+      <div>
+        <Nav />
+        <div className="calendar">
+          <div className="button">
+            <Link to="/form">
+              <Button1>Add New Event!!</Button1>{" "}
+            </Link>
+          </div>
+          <Calendar events={events} />
         </div>
-        <Calendar events={events} />
       </div>
     );
   }

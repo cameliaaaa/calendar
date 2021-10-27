@@ -1,5 +1,10 @@
 import { useState } from "react";
-import { Switch, BrowserRouter as Router, Route } from "react-router-dom";
+import {
+  Redirect,
+  Switch,
+  BrowserRouter as Router,
+  Route,
+} from "react-router-dom";
 import { ContactWrapper } from "./style";
 import Nav from "./nav";
 import Contact from "./contact";
@@ -13,6 +18,10 @@ import Login from "../components/Login";
 import Signup from "../components/Signup";
 import ForgotPassword from "../components/ForgotPassword";
 import Home from "../components/Home";
+import { lazy, Suspense } from "react";
+import PrivateRoute from "../routes/PrivateRoute";
+import PublicRoute from "../routes/PublicRoute";
+import ProtectedRoutes from "../routes/ProtectedRoute";
 
 const grouplist = [
   {
@@ -274,49 +283,73 @@ const forgotPasswordData = {
 
 const Main = () => {
   const [group, setGroup] = useState(grouplist);
-
+  const isAuthenticated = true;
   const [contact, setContact] = useState(contactlist);
 
   return (
     <Router>
-      <ContactWrapper>
-        <Nav />
-        <Route path="/contact">
-          <Contact contact={contact} setContact={setContact} />
-        </Route>
-        <Route path="/group">
-          <Group
-            group={group}
-            contact={contact}
-            setGroup={setGroup}
-            setContact={setContact}
-            grouplist={grouplist}
-          />
-        </Route>
-        <Route path="/calendar" exact component={Calendar1} />
-        <Route path="/form" exact component={EventForm} />
+      <Suspense fallback={<h1>Loading profile...</h1>}>
         <Switch>
-          <Route path="/:path(|homepage)">
+          <PublicRoute
+            path="/:path(|homepage)"
+            isAuthenticated={isAuthenticated}
+          >
             <Homepage {...homepageData} />
-          </Route>
-          <Route path="/login">
+          </PublicRoute>
+          <PublicRoute path="/login" isAuthenticated={isAuthenticated}>
             <Login {...loginData} />
-          </Route>
-          <Route path="/signup">
+          </PublicRoute>
+          <PublicRoute path="/signup" isAuthenticated={isAuthenticated}>
             <Signup {...signupData} />
-          </Route>
-          <Route path="/forgotpassword">
+          </PublicRoute>
+          <PublicRoute path="/forgotpassword" isAuthenticated={isAuthenticated}>
             <ForgotPassword {...forgotPasswordData} />
-          </Route>
-          <Route path="/home">
+          </PublicRoute>
+          <PublicRoute path="/home" isAuthenticated={isAuthenticated}>
             <Home />
-          </Route>
+          </PublicRoute>
 
+          <ContactWrapper>
+            <PrivateRoute path="/contact" isAuthenticated={isAuthenticated}>
+              <Nav />
+              <Contact contact={contact} setContact={setContact} />
+              <ProtectedRoutes />
+            </PrivateRoute>
+            <PrivateRoute path="/me" isAuthenticated={isAuthenticated}>
+              <Nav />
+              <ProtectedRoutes />
+            </PrivateRoute>
+            <PrivateRoute path="/group" isAuthenticated={isAuthenticated}>
+              <Nav />
+              <Group
+                group={group}
+                contact={contact}
+                setGroup={setGroup}
+                setContact={setContact}
+                grouplist={grouplist}
+              />
+              <ProtectedRoutes />
+            </PrivateRoute>
+            <PrivateRoute
+              path="/calendar"
+              component={Calendar1}
+              isAuthenticated={isAuthenticated}
+            >
+              <Nav />
+              <ProtectedRoutes />
+            </PrivateRoute>
+            <PrivateRoute
+              path="/form"
+              exact
+              component={EventForm}
+              isAuthenticated={isAuthenticated}
+            />
+          </ContactWrapper>
           <Route>
             <NotFoundPage {...notFoundPageData} />
           </Route>
         </Switch>
-      </ContactWrapper>
+      </Suspense>
     </Router>
   );
 };
