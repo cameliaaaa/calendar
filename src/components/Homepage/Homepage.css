@@ -1,0 +1,287 @@
+.homepage {
+  height: 1080px;
+  overflow: hidden;
+  width: 1920px;
+  opacity: 0;
+filter: blur(10px);
+}
+
+.homepage.animate-enter1 {
+  animation: animate-enter1-frames 0.40s ease-in-out 0.00s 1 normal forwards;
+  opacity: 0;
+filter: blur(10px);
+}
+
+.whole-home-page {
+  height: 1642px;
+  left: -1512px;
+  position: relative;
+  top: -11px;
+  width: 5019px;
+}
+
+.bottom-layer-images {
+  height: 1642px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 5019px;
+}
+
+.lightblue-bg {
+  background-color: #e4f6fa;
+  border: 1px solid var(--dove-gray);
+  height: 1640px;
+  left: 0;
+  position: absolute;
+  top: 2px;
+  width: 5019px;
+}
+
+.gradient-bg {
+  height: 1114px;
+  left: 1529px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1920px;
+}
+
+.blue-bg {
+  height: 919px;
+  left: 1888px;
+  object-fit: cover;
+  position: absolute;
+  top: 11px;
+  width: 2029px;
+}
+
+.orange-bg {
+  height: 949px;
+  left: 116px;
+  object-fit: cover;
+  position: absolute;
+  top: 110px;
+  width: 2096px;
+}
+
+.copyright {
+  color: #88c3e6;
+  font-family: var(--font-family-segoeui-black);
+  font-size: var(--font-size-xl);
+  font-weight: 900;
+  left: 2283px;
+  letter-spacing: 0;
+  line-height: 18px;
+  position: absolute;
+  top: 1042px;
+  white-space: nowrap;
+}
+
+.path-2 {
+  height: 1px;
+  left: 1562px;
+  object-fit: cover;
+  position: absolute;
+  top: 1007px;
+  width: 1820px;
+}
+
+.crm-image {
+  height: 740px;
+  left: 1562px;
+  object-fit: cover;
+  position: absolute;
+  top: 168px;
+  width: 738px;
+}
+
+.text-area {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  left: 2666px;
+  min-height: 573px;
+  position: absolute;
+  top: 148px;
+  width: 702px;
+}
+
+.text-3 {
+  color: var(--ebony-clay);
+  font-family: var(--font-family-tahoma-bold);
+  font-size: 64px;
+  height: 159px;
+  letter-spacing: 0.48px;
+  line-height: 80px;
+  margin-top: -8px;
+  width: 702px;
+}
+
+.overlap-group1-1 {
+  height: 399px;
+  margin-top: 23px;
+  position: relative;
+  width: 578px;
+}
+
+.text-4 {
+  color: var(--ebony-clay);
+  font-family: var(--font-family-tahoma);
+  font-size: var(--font-size-xxxxl);
+  height: 352px;
+  left: 0;
+  letter-spacing: 0.19px;
+  line-height: 40px;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  width: 578px;
+}
+
+.span0 {
+  font-family: var(--font-family-tahoma-regular);
+  letter-spacing: 0.21px;
+}
+
+.span1 {
+  font-family: var(--font-family-tahoma-regular);
+  font-size: var(--font-size-xxxl);
+}
+
+.home-page-head-bar {
+  height: 100px;
+  left: 1055px;
+  position: absolute;
+  top: 11px;
+  width: 2800px;
+}
+
+.white-bg-4 {
+  background-color: var(--white);
+  height: 100px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 2800px;
+}
+
+.head-bar-sep-line {
+  background-color: var(--iron);
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 100px;
+  width: 2800px;
+}
+
+.agile-sprite-1 {
+  height: 100px;
+  left: 1870px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 102px;
+}
+
+.menu-1 {
+  align-items: flex-start;
+  display: flex;
+  height: 31px;
+  left: 2051px;
+  min-width: 222px;
+  position: absolute;
+  top: 37px;
+}
+
+.login-1 {
+  cursor: pointer;
+  display: flex;
+  height: 31px;
+  pointer-events: auto;
+  transition: all 0.2s ease;
+  width: 68px;
+}
+
+.login-1:hover {
+  transform: scale(1.1);
+}
+
+.group-143614-5 {
+  flex: 1;
+  pointer-events: auto;
+  transition: all 0.2s ease;
+  width: 68px;
+}
+
+.group-143614-5:hover {
+  box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.2);
+}
+
+.overlap-group-5 {
+  height: 29px;
+  position: relative;
+  top: 2px;
+}
+
+.path-4599-5 {
+  height: 2px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 28px;
+  width: 68px;
+}
+
+.log-in-4 {
+  left: 0;
+  letter-spacing: 0.16px;
+  line-height: 22px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+.signup-1 {
+  cursor: pointer;
+  display: flex;
+  height: 31px;
+  margin-left: 80px;
+  pointer-events: auto;
+  transition: all 0.2s ease;
+  width: 74px;
+}
+
+.signup-1:hover {
+  transform: scale(1.1);
+}
+
+.group-143614-6 {
+  flex: 1;
+  pointer-events: auto;
+  transition: all 0.2s ease;
+  width: 76px;
+}
+
+.group-143614-6:hover {
+  box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.2);
+}
+
+.sign-up-1 {
+  left: 0;
+  letter-spacing: 0.16px;
+  line-height: 22px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+@keyframes animate-enter1-frames {
+  from{opacity: 0;
+filter: blur(10px);
+}
+to{opacity: 1;
+filter: none;
+}
+}
+

@@ -1,0 +1,26 @@
+/* creating css loader */
+
+
+#login_loading {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-top: 13px;
+    margin-bottom: 6px;
+    border: 8px solid rgba(192, 214, 229, 0.71);
+    border-top: 9px solid rgba(156, 65, 242, 0.85);
+    border-radius: 100%;
+
+    visibility: hidden;
+    animation: spin 1s infinite linear;
+}
+#login_loading.display {
+    visibility: visible;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
