@@ -307,7 +307,7 @@ const Main = () => {
           <PublicRoute path="/forgotpassword" isAuthenticated={isAuthenticated}>
             <ForgotPassword {...forgotPasswordData} />
           </PublicRoute>
-          <PublicRoute path="/home" isAuthenticated={isAuthenticated}>
+          <PublicRoute path="/homepage" isAuthenticated={isAuthenticated}>
             <Home />
           </PublicRoute>
           <Fragment>
@@ -351,7 +351,7 @@ const Main = () => {
               />
             </ContactWrapper>
           </Fragment>
-          <Route>
+          <Route path="*">
             <NotFoundPage {...notFoundPageData} />
           </Route>
         </Switch>

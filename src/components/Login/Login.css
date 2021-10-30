@@ -425,8 +425,8 @@
   cursor: pointer;
   letter-spacing: 0.1px;
   line-height: 22px;
+  margin-left: -80px;
   min-height: 23px;
-  min-width: 136px;
   white-space: nowrap;
 }
 
@@ -434,7 +434,7 @@
   cursor: pointer;
   letter-spacing: 0.1px;
   line-height: 22px;
-  margin-left: 160px;
+  margin-left: 100px;
   min-height: 23px;
   white-space: nowrap;
 }
@@ -461,7 +461,8 @@
   display: flex;
   height: 31px;
   pointer-events: auto;
-  position: relative;
+  position: absolute;
+  left: -100%;
   transition: all 0.2s ease;
   width: 68px;
 }
