@@ -130,77 +130,142 @@
   border: 1px solid var(--alto);
 }
 
-.email-2 {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: column;
-  margin-right: 1px;
-  margin-top: 31px;
-  min-height: 75px;
-  width: 491px;
+.group-143614-1 {
+  flex: 1;
+  pointer-events: auto;
+  transition: all 0.2s ease;
+  width: 68px;
 }
 
-.email-3 {
-  letter-spacing: 0.11px;
-  line-height: 16px;
-  margin-top: 2px;
-  min-height: 21px;
-  white-space: nowrap;
+.group-143614-1:hover {
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
 }
 
-.overlap-group3-2 {
-  align-items: center;
-  background-color: var(--white);
-  border-radius: 4px;
-  display: flex;
-  height: 50px;
-  justify-content: flex-end;
-  margin-top: 2px;
-  min-width: 491px;
-  padding: 12.5px 7.5px;
-}
-
-.overlap-group-15 {
-  height: 17px;
-  margin-bottom: 1.15px;
+.overlap-group-1 {
+  height: 29px;
   position: relative;
-  width: 24px;
+  top: 2px;
 }
 
-.rectangle-52-1 {
-  height: 17px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 23px;
-}
-
-.path-54-1 {
-  height: 9px;
+.path-4599-1 {
+  height: 2px;
   left: 0;
   object-fit: cover;
   position: absolute;
+  top: 28px;
+  width: 68px;
+}
+
+.log-in {
+  left: 0;
+  letter-spacing: 0.16px;
+  line-height: 22px;
+  position: absolute;
   top: 0;
-  width: 24px;
-}
-
-.enter-email-address-1 {
-  align-self: flex-end;
-  background-color: transparent;
-  border: 0;
-  height: 22px;
-  letter-spacing: 0.05px;
-  line-height: 24px;
-  margin-left: 10px;
-  padding: 0;
   white-space: nowrap;
-  width: 437px;
 }
 
-.enter-email-address-1::placeholder {
-  color: #70707099;
+.group-143614-2 {
+  flex: 1;
+  pointer-events: auto;
+  transition: all 0.2s ease;
+  width: 68px;
 }
 
-.email-2.email-4 {
-  margin-top: 116px;
+.group-143614-2:hover {
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.overlap-group-2 {
+  height: 29px;
+  position: relative;
+  top: 2px;
+}
+
+.path-4599-2 {
+  height: 2px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 28px;
+  width: 68px;
+}
+
+.log-in-1 {
+  left: 0;
+  letter-spacing: 0.16px;
+  line-height: 22px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+.group-143614-3 {
+  flex: 1;
+  pointer-events: auto;
+  transition: all 0.2s ease;
+  width: 68px;
+}
+
+.group-143614-3:hover {
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.overlap-group-3 {
+  height: 29px;
+  position: relative;
+  top: 2px;
+}
+
+.path-4599-3 {
+  height: 2px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 28px;
+  width: 68px;
+}
+
+.log-in-2 {
+  left: 0;
+  letter-spacing: 0.16px;
+  line-height: 22px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+.group-143614-4 {
+  flex: 1;
+  pointer-events: auto;
+  transition: all 0.2s ease;
+  width: 68px;
+}
+
+.group-143614-4:hover {
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.overlap-group-4 {
+  height: 29px;
+  position: relative;
+  top: 2px;
+}
+
+.path-4599-4 {
+  height: 2px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 28px;
+  width: 68px;
+}
+
+.log-in-3 {
+  left: 0;
+  letter-spacing: 0.16px;
+  line-height: 22px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
 }

@@ -1,0 +1,8 @@
+.sign_in_page {
+  height: 400px;
+  object-fit: cover;
+  position: absolute;
+  left: 0%;
+  top: 20%;
+  width: 400px;
+}
