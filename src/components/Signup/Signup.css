@@ -1,3 +1,135 @@
+:root {
+  --alto: #d9d9da;
+  --blueberry: #4e6ffc;
+  --blueberry-2: #4e6ffce8;
+  --dove-gray: #707070;
+  --ebony-clay: #212340;
+  --iron: #d4d4d5;
+  --royal-blue: #3e5bd6;
+  --scarpa-flow: #555558;
+  --unmellow-yellow: #002dec;
+  --white: #ffffff;
+
+  --font-size-l: 17px;
+  --font-size-m: 16px;
+  --font-size-xl: 18px;
+  --font-size-xxl: 22px;
+  --font-size-xxxl: 26px;
+  --font-size-xxxxl: 28px;
+  --font-size-xxxxxl: 35px;
+
+  --font-family-inter: "Inter", Helvetica;
+  --font-family-segoeui-black: "SegoeUI-Black", Helvetica;
+  --font-family-tahoma: "Tahoma", Helvetica;
+  --font-family-tahoma-bold: "Tahoma-Bold", Helvetica;
+  --font-family-tahoma-regular: "Tahoma-Regular", Helvetica;
+}
+.tahoma-regular-normal-un-mellow-yellow-22px {
+  color: var(--unmellow-yellow);
+  font-family: var(--font-family-tahoma-regular);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.tahoma-regular-normal-scarpa-flow-16px {
+  color: var(--scarpa-flow);
+  font-family: var(--font-family-tahoma-regular);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.tahoma-regular-normal-dove-gray-16px {
+  color: var(--dove-gray);
+  font-family: var(--font-family-tahoma-regular);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.tahoma-normal-blueberry-16px {
+  color: var(--blueberry);
+  font-family: var(--font-family-tahoma);
+  font-size: var(--font-size-m);
+}
+
+.tahoma-regular-normal-blueberry-16px {
+  color: var(--blueberry);
+  font-family: var(--font-family-tahoma-regular);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.tahoma-bold-ebony-clay-35px {
+  color: var(--ebony-clay);
+  font-family: var(--font-family-tahoma-bold);
+  font-size: var(--font-size-xxxxxl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.tahoma-bold-blueberry-35px {
+  color: var(--blueberry);
+  font-family: var(--font-family-tahoma-bold);
+  font-size: var(--font-size-xxxxxl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.tahoma-bold-red-22px {
+  color: #e21515;
+  font-family: var(--font-family-tahoma-bold);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.tahoma-regular-normal-white-18px {
+  color: var(--white);
+  font-family: var(--font-family-tahoma-regular);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.tahoma-regular-normal-dove-gray-17px {
+  color: var(--dove-gray);
+  font-family: var(--font-family-tahoma-regular);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.tahoma-regular-normal-blueberry-22px {
+  color: var(--blueberry);
+  font-family: var(--font-family-tahoma-regular);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.tahoma-regular-normal-blueberry-17px {
+  color: var(--blueberry-2);
+  font-family: var(--font-family-tahoma-regular);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.border-1-5px-iron {
+  border: 2px solid var(--iron);
+}
+
+.border-1-5px-dove-gray {
+  border: 2px solid var(--dove-gray);
+}
+
+.border-1px-alto {
+  border: 1px solid var(--alto);
+}
+
 .signupForm {
   background-color: var(--white);
   height: 1079px;
@@ -5,13 +137,13 @@
   position: relative;
   width: 1920px;
   opacity: 0;
-filter: blur(10px);
+  filter: blur(10px);
 }
 
 .signupForm.animate-enter3 {
-  animation: animate-enter3-frames 0.20s ease-out 0.00s 1 normal forwards;
+  animation: animate-enter3-frames 0.2s ease-out 0s 1 normal forwards;
   opacity: 0;
-filter: blur(10px);
+  filter: blur(10px);
 }
 
 .wholeSignupPage {
@@ -53,7 +185,7 @@ filter: blur(10px);
 
 .agile-sprite-3 {
   height: 159px;
-  margin-right: 2.0px;
+  margin-right: 2px;
   margin-top: 5px;
   object-fit: cover;
   width: 162px;
@@ -73,7 +205,7 @@ filter: blur(10px);
   align-items: flex-start;
   display: flex;
   height: 75px;
-  margin-right: 1.0px;
+  margin-right: 1px;
   margin-top: 55px;
   min-width: 491px;
 }
@@ -111,7 +243,7 @@ filter: blur(10px);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 1.0px;
+  margin-top: 1px;
   min-height: 19px;
   width: 15px;
 }
@@ -205,7 +337,7 @@ filter: blur(10px);
   align-items: flex-start;
   display: flex;
   flex-direction: column;
-  margin-right: 1.0px;
+  margin-right: 1px;
   margin-top: 30px;
   min-height: 75px;
   width: 491px;
@@ -293,7 +425,6 @@ filter: blur(10px);
   color: #70707099;
 }
 
-
 .overlap-group-14 {
   border-radius: 4px;
   height: 50px;
@@ -332,7 +463,7 @@ filter: blur(10px);
   cursor: pointer;
   font-family: var(--font-family-tahoma-regular);
   font-size: var(--font-size-l);
-  letter-spacing: 0.10px;
+  letter-spacing: 0.1px;
   line-height: 22px;
   margin-top: 64px;
   min-height: 23px;
@@ -358,7 +489,7 @@ filter: blur(10px);
   top: 35px;
 }
 
-.login-5 {
+.signup_5_btn {
   cursor: pointer;
   display: flex;
   height: 31px;
@@ -368,7 +499,7 @@ filter: blur(10px);
   width: 68px;
 }
 
-.login-5:hover {
+.signup_5_btn:hover {
   transform: scale(1.1);
 }
 
@@ -399,7 +530,7 @@ filter: blur(10px);
 }
 
 .text-8:hover {
-  box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
 }
 
 .path-4643-2 {
@@ -411,7 +542,6 @@ filter: blur(10px);
   width: 390px;
 }
 
-
 .signup-btn:hover {
   transform: scale(0.9);
 }
@@ -421,7 +551,7 @@ filter: blur(10px);
   border-radius: 4px;
   cursor: pointer;
   height: 50px;
-  margin-right: 2.0px;
+  margin-right: 2px;
   margin-top: 42px;
   pointer-events: auto;
   transition: all 0.15s ease-in-out;
@@ -433,18 +563,19 @@ filter: blur(10px);
   white-space: nowrap;
 
   font-size: 20px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   border: none;
   padding: 0.6em;
   text-align: center;
   color: #ffffff;
 }
 @keyframes animate-enter3-frames {
-  from{opacity: 0;
-filter: blur(10px);
+  from {
+    opacity: 0;
+    filter: blur(10px);
+  }
+  to {
+    opacity: 1;
+    filter: none;
+  }
 }
-to{opacity: 1;
-filter: none;
-}
-}
-

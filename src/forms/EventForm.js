@@ -51,7 +51,7 @@ class EventForm extends React.Component {
         <Form onSubmit={this.onSubmit} loading={this.loading}>
           <div>
             <img src={logo} alt="Logo" height="200px" width="200px" />
-            <img className="sign-in-page" src={signInPage} />
+            <img className="sign_in_page" src={signInPage} />
           </div>
           <div>
             <Form.Field error={!!this.state.errors.date}>

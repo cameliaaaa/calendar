@@ -1,26 +1,156 @@
 /* creating css loader */
+:root {
+  --alto: #d9d9da;
+  --blueberry: #4e6ffc;
+  --blueberry-2: #4e6ffce8;
+  --dove-gray: #707070;
+  --ebony-clay: #212340;
+  --iron: #d4d4d5;
+  --royal-blue: #3e5bd6;
+  --scarpa-flow: #555558;
+  --unmellow-yellow: #002dec;
+  --white: #ffffff;
 
+  --font-size-l: 17px;
+  --font-size-m: 16px;
+  --font-size-xl: 18px;
+  --font-size-xxl: 22px;
+  --font-size-xxxl: 26px;
+  --font-size-xxxxl: 28px;
+  --font-size-xxxxxl: 35px;
+
+  --font-family-inter: "Inter", Helvetica;
+  --font-family-segoeui-black: "SegoeUI-Black", Helvetica;
+  --font-family-tahoma: "Tahoma", Helvetica;
+  --font-family-tahoma-bold: "Tahoma-Bold", Helvetica;
+  --font-family-tahoma-regular: "Tahoma-Regular", Helvetica;
+}
+.tahoma-regular-normal-un-mellow-yellow-22px {
+  color: var(--unmellow-yellow);
+  font-family: var(--font-family-tahoma-regular);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.tahoma-regular-normal-scarpa-flow-16px {
+  color: var(--scarpa-flow);
+  font-family: var(--font-family-tahoma-regular);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.tahoma-regular-normal-dove-gray-16px {
+  color: var(--dove-gray);
+  font-family: var(--font-family-tahoma-regular);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.tahoma-normal-blueberry-16px {
+  color: var(--blueberry);
+  font-family: var(--font-family-tahoma);
+  font-size: var(--font-size-m);
+}
+
+.tahoma-regular-normal-blueberry-16px {
+  color: var(--blueberry);
+  font-family: var(--font-family-tahoma-regular);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.tahoma-bold-ebony-clay-35px {
+  color: var(--ebony-clay);
+  font-family: var(--font-family-tahoma-bold);
+  font-size: var(--font-size-xxxxxl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.tahoma-bold-blueberry-35px {
+  color: var(--blueberry);
+  font-family: var(--font-family-tahoma-bold);
+  font-size: var(--font-size-xxxxxl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.tahoma-bold-red-22px {
+  color: #e21515;
+  font-family: var(--font-family-tahoma-bold);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.tahoma-regular-normal-white-18px {
+  color: var(--white);
+  font-family: var(--font-family-tahoma-regular);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.tahoma-regular-normal-dove-gray-17px {
+  color: var(--dove-gray);
+  font-family: var(--font-family-tahoma-regular);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.tahoma-regular-normal-blueberry-22px {
+  color: var(--blueberry);
+  font-family: var(--font-family-tahoma-regular);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.tahoma-regular-normal-blueberry-17px {
+  color: var(--blueberry-2);
+  font-family: var(--font-family-tahoma-regular);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.border-1-5px-iron {
+  border: 2px solid var(--iron);
+}
+
+.border-1-5px-dove-gray {
+  border: 2px solid var(--dove-gray);
+}
+
+.border-1px-alto {
+  border: 1px solid var(--alto);
+}
 
 #login_loading {
-    width: 2.5rem;
-    height: 2.5rem;
-    margin-top: 13px;
-    margin-bottom: 6px;
-    border: 8px solid rgba(192, 214, 229, 0.71);
-    border-top: 9px solid rgba(156, 65, 242, 0.85);
-    border-radius: 100%;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-top: 13px;
+  margin-bottom: 6px;
+  border: 8px solid rgba(192, 214, 229, 0.71);
+  border-top: 9px solid rgba(156, 65, 242, 0.85);
+  border-radius: 100%;
 
-    visibility: hidden;
-    animation: spin 1s infinite linear;
+  visibility: hidden;
+  animation: spin 1s infinite linear;
 }
 #login_loading.display {
-    visibility: visible;
+  visibility: visible;
 }
 @keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

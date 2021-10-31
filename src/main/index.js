@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, Fragment } from "react";
 import {
   Redirect,
   Switch,
@@ -22,6 +22,8 @@ import { lazy, Suspense } from "react";
 import PrivateRoute from "../routes/PrivateRoute";
 import PublicRoute from "../routes/PublicRoute";
 import ProtectedRoutes from "../routes/ProtectedRoute";
+import { GlobalStyle } from "../style";
+import Header from "../header";
 
 const grouplist = [
   {
@@ -308,43 +310,46 @@ const Main = () => {
           <PublicRoute path="/home" isAuthenticated={isAuthenticated}>
             <Home />
           </PublicRoute>
-
-          <ContactWrapper>
-            <PrivateRoute path="/contact" isAuthenticated={isAuthenticated}>
-              <Nav />
-              <Contact contact={contact} setContact={setContact} />
-              <ProtectedRoutes />
-            </PrivateRoute>
-            <PrivateRoute path="/me" isAuthenticated={isAuthenticated}>
-              <Nav />
-              <ProtectedRoutes />
-            </PrivateRoute>
-            <PrivateRoute path="/group" isAuthenticated={isAuthenticated}>
-              <Nav />
-              <Group
-                group={group}
-                contact={contact}
-                setGroup={setGroup}
-                setContact={setContact}
-                grouplist={grouplist}
+          <Fragment>
+            <GlobalStyle />
+            <Header />
+            <ContactWrapper>
+              <PrivateRoute path="/contact" isAuthenticated={isAuthenticated}>
+                <Nav />
+                <Contact contact={contact} setContact={setContact} />
+                <ProtectedRoutes />
+              </PrivateRoute>
+              <PrivateRoute path="/me" isAuthenticated={isAuthenticated}>
+                <Nav />
+                <ProtectedRoutes />
+              </PrivateRoute>
+              <PrivateRoute path="/group" isAuthenticated={isAuthenticated}>
+                <Nav />
+                <Group
+                  group={group}
+                  contact={contact}
+                  setGroup={setGroup}
+                  setContact={setContact}
+                  grouplist={grouplist}
+                />
+                <ProtectedRoutes />
+              </PrivateRoute>
+              <PrivateRoute
+                path="/calendar"
+                component={Calendar1}
+                isAuthenticated={isAuthenticated}
+              >
+                <Nav />
+                <ProtectedRoutes />
+              </PrivateRoute>
+              <PrivateRoute
+                path="/form"
+                exact
+                component={EventForm}
+                isAuthenticated={isAuthenticated}
               />
-              <ProtectedRoutes />
-            </PrivateRoute>
-            <PrivateRoute
-              path="/calendar"
-              component={Calendar1}
-              isAuthenticated={isAuthenticated}
-            >
-              <Nav />
-              <ProtectedRoutes />
-            </PrivateRoute>
-            <PrivateRoute
-              path="/form"
-              exact
-              component={EventForm}
-              isAuthenticated={isAuthenticated}
-            />
-          </ContactWrapper>
+            </ContactWrapper>
+          </Fragment>
           <Route>
             <NotFoundPage {...notFoundPageData} />
           </Route>
