@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import signInPage from "../public/sign in page.png";
 import logo from "../public/AgileSprite logo.png";
 import { HomePageContainer } from "./HomePageContainer";
-import "./event.css";
+import "./signup.css";
 
 class EventForm extends React.Component {
   state = {
@@ -47,58 +47,56 @@ class EventForm extends React.Component {
 
   render() {
     return (
-      <div>
-        <HomePageContainer>
-          <Form onSubmit={this.onSubmit} loading={this.loading}>
-            <div>
-              <img src={logo} alt="Logo" height="100px" width="100px" />
-              <img className="sign_in_page" src={signInPage} />
-            </div>
-            <div>
-              <Form.Field error={!!this.state.errors.date}>
-                <label htmlFor="date">Enter your date </label>
-                <input
-                  type="date"
-                  id="date"
-                  name="date"
-                  placeholder="Enter your start event date"
-                  value={this.state.data.date}
-                  onChange={this.onChange}
-                />
-                {this.state.errors.date && (
-                  <InlineError text={this.state.errors.date} />
-                )}
-              </Form.Field>
-              <Form.Field>
-                <label htmlFor="time*">Enter your time </label>
-                <input
-                  type="time"
-                  id="time"
-                  name="time"
-                  placeholder="Enter your start time"
-                  value={this.state.data.time}
-                  onChange={this.onChange}
-                />
-              </Form.Field>
+      <HomePageContainer>
+        <Form onSubmit={this.onSubmit} loading={this.loading}>
+          <div>
+            <img src={logo} alt="Logo" height="200px" width="200px" />
+            <img className="sign_in_page" src={signInPage} />
+          </div>
+          <div>
+            <Form.Field error={!!this.state.errors.date}>
+              <label htmlFor="date">Enter your date </label>
+              <input
+                type="date"
+                id="date"
+                name="date"
+                placeholder="Enter your start event date"
+                value={this.state.data.date}
+                onChange={this.onChange}
+              />
+              {this.state.errors.date && (
+                <InlineError text={this.state.errors.date} />
+              )}
+            </Form.Field>
+            <Form.Field>
+              <label htmlFor="time*">Enter your time </label>
+              <input
+                type="time"
+                id="time"
+                name="time"
+                placeholder="Enter your start time"
+                value={this.state.data.time}
+                onChange={this.onChange}
+              />
+            </Form.Field>
 
-              <Form.Field>
-                <label htmlFor="content*">Enter your event content </label>
-                <input
-                  type="word"
-                  id="content"
-                  name="content"
-                  placeholder="describe what your event is about?"
-                  value={this.state.data.content}
-                  onChange={this.onChange}
-                />
-              </Form.Field>
-            </div>
-            <Link to="/calendar">
-              <button type="submit">Save</button>
-            </Link>
-          </Form>
-        </HomePageContainer>
-      </div>
+            <Form.Field>
+              <label htmlFor="content*">Enter your event content </label>
+              <input
+                type="word"
+                id="content"
+                name="content"
+                placeholder="describe what your event is about?"
+                value={this.state.data.content}
+                onChange={this.onChange}
+              />
+            </Form.Field>
+          </div>
+          <Link to="/calendar">
+            <button type="submit">Save</button>
+          </Link>
+        </Form>
+      </HomePageContainer>
     );
   }
 }

@@ -1,5 +1,4 @@
 import { useState, Fragment } from "react";
-import Header from "../header";
 import {
   Redirect,
   Switch,
@@ -24,6 +23,7 @@ import PrivateRoute from "../routes/PrivateRoute";
 import PublicRoute from "../routes/PublicRoute";
 import ProtectedRoutes from "../routes/ProtectedRoute";
 import { GlobalStyle } from "../style";
+import Header from "../header";
 
 const grouplist = [
   {
@@ -285,7 +285,7 @@ const forgotPasswordData = {
 
 const Main = () => {
   const [group, setGroup] = useState(grouplist);
-  const isAuthenticated = false;
+  const isAuthenticated = true;
   const [contact, setContact] = useState(contactlist);
 
   return (
@@ -307,14 +307,13 @@ const Main = () => {
           <PublicRoute path="/forgotpassword" isAuthenticated={isAuthenticated}>
             <ForgotPassword {...forgotPasswordData} />
           </PublicRoute>
-          <PublicRoute path="/homepage" isAuthenticated={isAuthenticated}>
+          <PublicRoute path="/home" isAuthenticated={isAuthenticated}>
             <Home />
           </PublicRoute>
           <Fragment>
-            <Header />
             <GlobalStyle />
+            <Header />
             <ContactWrapper>
-              <GlobalStyle />
               <PrivateRoute path="/contact" isAuthenticated={isAuthenticated}>
                 <Nav />
                 <Contact contact={contact} setContact={setContact} />
@@ -351,7 +350,7 @@ const Main = () => {
               />
             </ContactWrapper>
           </Fragment>
-          <Route path="*">
+          <Route>
             <NotFoundPage {...notFoundPageData} />
           </Route>
         </Switch>

@@ -1,7 +1,7 @@
 import React from "react";
-import "./LoginLink.css";
+import "./Group143614.css";
 
-function LoginLink() {
+function Group143614() {
   return (
     <div className="group-143614-1 smart-layers-pointers">
       <div className="overlap-group-1">
@@ -12,4 +12,4 @@ function LoginLink() {
   );
 }
 
-export default LoginLink;
+export default Group143614;

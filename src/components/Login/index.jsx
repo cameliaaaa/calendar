@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import BackgroundBorder from "../BackgroundBorder";
-import LoginLink from "../LoginLink";
-import SignupLink from "../SignupLink";
+import LoginLink from "../Group143614";
+import SignupLink from "../Group1436142";
 import "./Login.css";
 import "./LoginLoading.css";
 import { validateLogin } from "./loginValidation";

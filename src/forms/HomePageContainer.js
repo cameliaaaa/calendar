@@ -1,6 +1,6 @@
 import styled from "styled-components";
 export const HomePageContainer = styled.div`
-  width: 300;
-  height: 100;
+  width: 200vw;
+  height: 100vh;
   background: #e0f9f8;
 `;
